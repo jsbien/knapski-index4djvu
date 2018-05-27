@@ -1,0 +1,778 @@
+% $Id: KnapskiDjVu.tex,v 1.7 2006/12/07 07:21:47 jsbien Exp $
+% latex2html -html_version 4_1,latin2,unicode,latin2 -noinfo -custom_titles KnapskiDjVu.tex
+% latex2html -html_version 4_1,latin2,unicode,latin2 -custom_titles KnapskiDjVu.tex
+% jak zaznaczyæ wielko¶æ orygina³u?
+\documentclass[a4paper]{article}
+%\documentclass{article}
+\usepackage[latin2]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{polski}
+\usepackage{lmodern}
+\usepackage{html}
+\usepackage{url}
+
+\usepackage{longtable}
+
+\newcommand{\nl}[2]{\htmladdnormallink{#1}{#2}}
+
+\def\jl#1#2#3{\HTMLcode[HREF="javascript:showpg('#2 page=#3 zoom=width')"]{A}{#1}}
+
+\def\Java{Z dodatkowych odno¶ników oznaczonych ,,JavaScript'' nale¿y
+  korzystaæ wtedy, gdy s³ownik dostêpny jest lokalnie --- na p³ycie CD
+  lub skopiowany na dysk; nie ma jednak takiej potrzeby, je¶li u¿ywa
+  siê systemu Linux.}
+
+\title{\textbf{{S³ownik Knapskiego}\\\textit{Tomy I i II}}\\
+{\normalsize Jadwiga Puzynina:
+\normalsize \textit{,,Thesaurus'' Grzegorza Knapiusza.}}\\
+%{  Siedemnastowieczny warsztat pracy nad j\k{e}zykiem polskim}}\\
+Wydanie elektroniczne DjVuLibre\\\textit{Wersja trzecia}}
+
+\author{\nl{Biblioteka Uniwersytecka w
+    Warszawie}{http://www.buw.uw.edu.pl/}, \nl{Instytut Jêzyka
+    Polskiego
+    PAN}{http://www.ijp-pan.krakow.pl/polski/polski/00/01/index.php}\\\nl{Katedra
+  Lingwistyki Formalnej UW}{http://www.klf.uw.edu.pl/}}
+
+%\date{23 sierpnia 2005~r.}
+%\date{26 stycznia 2006~r.}
+%\date{19 wrze¶nia 2006~r.}
+\date{7 grudnia 2006~r.}
+
+
+\begin{document}
+\maketitle{}
+
+\section{Wstêp\HTMLset{mytitle}{wst}}
+\label{sec:wstp}
+
+
+
+\begin{quotation}
+%   ,,Thesaurus'' Grzegorza Knapskiego (alias Knapiusza, Knapa) to
+%   najwiêksze dzie³o leksykografii staropolskiej. Jego pierwsza czê¶æ
+%   stanowi±ca s³ownik polsko-³aciñsko-grecki ukaza³a siê po raz
+%   pierwszy w 1621 roku w oficynie Franciszka Cezarego w Krakowie. Tom
+%   trzeci --- ³aciñsko-polski --- wydany zosta³ piêæ lat pó¼niej, a
+%   trzeci pt. ,,Adagia continens'' --- w roku 1632.
+  
+%   Drugie, poprawione i uzupe³nione wydanie opublikowane zosta³o (ju¿
+%   po ¶mierci autora) przez tê sam± oficynê w latach 1643-1644. W³a¶nie
+%   dwa pierwsze tomy tej poszerzonej i poprawionej edycji ---
+%   najczê¶ciej wykorzystywanej we wspó³czesnych pracach
+%   historycznojêzykowych --- sta³y siê podstaw± reprodukcji cyfrowej.
+  
+%   Wydanie cyfrowej kopii ,,Thesaurusa'' by³o mo¿liwe dziêki wspó³pracy
+%   Pracowni Historii Jêzyka Polskiego XVII i I po³. XVIII w. Instytutu
+%   Jêzyka Polskiego PAN, gdzie narodzi³ siê pomys³ i koncepcja takiej
+%   edycji, a Sekcj± Dokumentów Wtórnych Oddzia³u Zabezpieczenia i
+%   Konserwacji Zbiorów BUW, która zamys³ ten
+%   zrealizowa³a.
+  
+%  ,,Thesaurus'' 
+\textit{Thesaurus Polonolatinograecus seu Promptuarium linguae
+    Latinae et Graecae}
+Grzegorza Knapskiego (alias Knapiusza, Knapa) to
+  najwiêksze dzie³o leksykografii staropolskiej. Jego pierwsza czê¶æ,
+  stanowi±ca s³ownik polsko-³aciñsko-grecki, ukaza³a siê w~1621 roku,
+  w~oficynie Franciszka Cezarego w~Krakowie. Tom drugi ( ³aciñsko-
+  polski), wydany zosta³ piêæ lat pó¼niej, a trzeci pt. ,,Adagia
+  continens'', w~roku 1632.
+  
+  Drugie, poprawione i uzupe³nione wydanie opublikowane zosta³o (ju¿
+  po ¶mierci autora) przez tê sam± oficynê, w~latach 1643 - 1644.
+  W³a¶nie dwa pierwsze tomy tej poszerzonej i poprawionej edycji -
+  najczê¶ciej wykorzystywanej we wspó³czesnych pracach
+  historycznojêzykowych - sta³y siê podstaw±  reprodukcji
+  cyfrowej.  
+  
+  Niniejsze wydanie nie wymaga konkretnego typu komputera, procesora
+  czy systemu operacyjnego.  Jedynym wymaganiem jest dostêpno¶æ
+  przegl±darki internetowej oraz dodatkowego modu³u obs³ugi formatu
+  DjVu --- patrz sekcja \ref{sec:instr-uytk}. Mo¿na równie¿ korzystaæ
+  ze specjalnych przegl±darek plików DjVu.
+\end{quotation}
+
+
+Wydanie cyfrowej kopii ,,Thesaurusa'' by³o mo¿liwe dziêki wspó³pracy
+Pracowni Historii Jêzyka Polskiego XVII i I po³. XVIII w.  Instytutu
+Jêzyka Polskiego PAN, gdzie narodzi³ siê pomys³ oraz koncepcja takiej
+edycji, a  Oddzia³em Zabezpieczenia i Konserwacji Zbiorów BUW, w 
+którym zamys³ ten zrealizowano.
+% \footnote{Powy¿sze 2 akapity stanowi±
+%   nieznacznie zmodyfikowany cytat z ok³adki opisanej dalej reprodukcji
+%   cyfrowej BUW.}
+
+Pierwsza edycja cyfrowa, opublikowana w~formie p³yty CD, zosta³a poddana w
+Katedrze Lingwistyki Formalnej UW dalszemu przetworzeniu, w~celu
+lepszego przystosowania jej do udostêpnienia w~Internecie i nadania
+jej bardziej wygodnej postaci. w~styczniu 2005 r. zosta³a ona
+rozszerzona o przygotowany przez Instytut Jêzyka Polskiego PAN indeks
+nieparzystych stron pierwszego tomu.
+
+\begin{rawhtml}
+<script language="javascript" type="text/javascript">
+<!--
+function showpg(str){ 
+        var doc;
+        doc = top.document; 
+        doc.open(); 
+        doc.write('<html><body>'); 
+        doc.write('<embed src='+str+' type=image/x.djvu  width=100% height=99%><\/embed>'); 
+        doc.write('<\/body><\/html>'); 
+        doc.close(); 
+}
+//-->
+</script>
+\end{rawhtml}
+
+
+
+Pierwsz± wersjê wydania DjVuLibre (z 23 sierpnia 2005~r.) przygotowa³
+w~ca³o¶ci \nl{Janusz S. Bieñ}{{http://www.mimuw.edu.pl/~jsbien/}}.
+
+W przygotowaniu wersji drugiej bra³y udzia³ dodatkowo mgr Aldona
+Przyborska-Szulc, która przygotowa³a indeks nieparzystych
+stron pierwszego tomu, i Katarzyna Poleszak, która przekszta³ci³a ten
+indeks do odpowiedniego formatu.  
+
+Dodatkowe informacje o wydaniu DjVuLibre dostêpne s± w~sekcji
+\ref{sec:podzikowania}.
+
+\section{Instrukcja u¿ytkownika\HTMLset{mytitle}{inst}}
+\label{sec:instr-uytk}
+
+
+
+Najlepszym sposobem dostêpu do s³ownika jest wykorzystanie dowolnej
+przegl±darki internetowej uzupe³nionej o wtyczkê obs³uguj±c± format
+DjVu. Mo¿na te¿ stosowaæ specjalne przegl±darki plików w~tym formacie.
+Informacje o dostêpno¶ci tych programów podane s± w
+\htmlref{Dodatku}{sec:dodatek}.
+
+Przedstawimy tutaj podstawowe funkcje przegl±darek dokumentów w
+formacie DjVu. Przy okazji podamy wybrane skróty klawiaturowe i
+podstawowe funkcje myszy dla dwóch konkretnych przegl±darek.
+
+
+
+\subsection{Linux --- \texttt{djview}\HTMLset{mytitle}{djvul}}
+\label{sec:linux-djview}
+\label{djview}
+
+% nie dzia³a:
+%\let\key\framebox
+%\let\key\textbf
+\def\key#1{\textbf{#1}}
+
+Niektóre funkcje realizowane s± przez kilka skrótów klawiaturowych, ni¿ej
+podajê tylko jeden, moim zadaniem najwygodniejszy.
+
+Skróty klawiaturowe niektórych funkcji mog± byæ zmieniane przez
+u¿ytkownika, podajê tutaj tylko warto¶ci domy¶lne.
+
+Prawy klawisz myszy uaktywnia menu. Zbli¿enie kursora myszy do dolnego
+brzegu ekranu ukazuje pasek narzêdzi.
+
+\begin{itemize}
+\item Skalowanie (ang. \textit{zoom})
+  \begin{itemize}
+  \item Skalowanie wzglêdne
+    \begin{itemize}
+    \item na szeroko¶æ strony: \key{w} (od angielskiego \textit{Fit \textbf{w}idth})
+    \item na rozmiar strony: \key{p} (od angielskiego \textit{Fit \textbf{p}age})
+    \end{itemize}
+  \item Skalowanie bezwzglêdne
+    \begin{itemize}
+    \item 100~\%: \key{1}
+    \item 200~\%: \key{2}
+    \item 300~\%: \key{3}
+% do sprawdzenia w ¼ród³ach!:
+    \item kolejno 150~\%, 300~\%, 450~\% itp.: \key{+}
+% do sprawdzenia w ¼ród³ach!:
+    \item kolejno 75~\%, 50~\%, 25~\% itp.: \key{-}
+    \end{itemize}
+  \item Lupa (ang. \textit{lens}): \key{Ctrl}
+\end{itemize}
+  \item Pozycjonowanie (ang. \textit{panning} i inne)
+    \begin{itemize}
+    \item Pocz±tek strony (górny lewy róg): \key{Home}
+    \item Koniec strony (dolny prawy róg): \key{End}
+    \item Przesuniêcie strony w dó³ (kursora w górê): \key{Up}
+    \item Przesuniêcie strony w górê (kursora w dó³): \key{Down}
+    \item Przesuniêcie strony w lewo (kursora w prawo): \key{Right}
+    \item Przesuniêcie strony w prawo (kursora w lewo): \key{Left}
+    \item Przesuniêcie strony mysz± w dowolnym kierunku po naci¶niêciu lewego klawisza
+    \end{itemize}
+  \item Przewijanie (ang. \textit{scrolling})
+    \begin{itemize}
+    \item Przewiniêcie do przodu (tekst w górê, kursor w dó³, w razie potrzeby przej¶cie do nastêpnej strony): \key{Space}
+    \item Przewiniêcie do ty³u (tekst w dó³, kursor w górê, w razie potrzeby przej¶cie do poprzedniej strony): \key{Backspace}
+    \end{itemize}
+  \item Nawigacja
+    \begin{itemize}
+    \item Nastêpna strona: \key{Page Down}
+    \item Poprzednia strona: \key{Page Up}
+    \item Wskazana strona: \key{g}
+    \item Pocz±tek dokumentu: \key{Ctrl} + \key{Home}
+    \item Koniec dokumentu: \key{Ctrl} + \key{End}
+    \end{itemize}
+  \item Obs³uga odno¶ników (ang. \textit{links})
+    \begin{itemize}
+    \item U¿ycie odno¶nika: pstrykniêcie lewym klawiszem myszy
+    \item Pokazanie wszystkich odno¶ników na stronie: \key{Shift}
+    \end{itemize}
+  \item Historia
+    \begin{itemize}
+% ``widok'' djvu.com.pl
+    \item Poprzedni widok: przycisk paska narzêdzi
+    \item Nastêpny widok: przycisk paska narzêdzi
+    \end{itemize}
+                                
+  \end{itemize}
+  
+  Nieco wiêcej informacji mo¿na znale¼æ w~dokumentacji dystrybuowanej
+  razem z programem.
+
+\subsection{MS Windows --- \texttt{DjVuPlugin}\HTMLset{mytitle}{djvum}}
+\label{sec:linux-djvum}
+
+
+\label{djvubrowser}
+
+Przegl±rka pracuje zawsze w~jednym z trzech trybów, z których dla nas
+istotne s± dwa: pozycjonowania (ang. \textit{pan}) i skalowania
+(t³umaczenie swobodne, ang. \textit{select}).
+
+W trybie pozycjonowania (kursor myszy w~kszta³cie rêki) przesuwanie
+myszy z wci¶niêtym lewym klawiszem powoduje przesuwanie obrazu strony
+w oknie; w~tym trybie naci¶niêcie \key{Ctrl} uaktywnia lupê, czyli
+powiêkszenie fragmentu strony wskazanego przez kursor myszy.
+
+W trybie skalowania (kursor myszy w~kszta³cie krzy¿yka) dwukrotnym
+klikniêciem lewym klawiszem zaznaczamy na stronie prostok±t, który
+nastêpnie zostanie powiêkszony.
+
+Prawy klawisz myszy uaktywnia menu, za pomoc± którego mo¿na m.in.
+zmieniæ tryb pracy z pozycjonowania na skalowanie i odwrotnie.  Ca³y
+czas jest widoczny pasek narzêdzi.
+
+Dodatkowo dostêpne s± skróty klawiaturowe.
+
+Niektóre funkcje realizowane s± przez kilka skrótów klawiaturowych, ni¿ej
+podajê tylko jeden, moim zadaniem najwygodniejszy.
+
+Skróty klawiaturowe niektórych funkcji mog± byæ zmieniane przez
+u¿ytkownika, podajê tutaj tylko warto¶ci domy¶lne.
+
+
+\begin{itemize}
+\item Skalowanie (ang. \textit{zoom})
+  \begin{itemize}
+  \item Skalowanie wzglêdne
+    \begin{itemize}
+ %   \item na szeroko¶æ strony: \key{w} (od angielskiego \textit{Fit \textbf{w}idth})
+    \item na szeroko¶æ strony: \key{w} (od angielskiego \textit{Fit \textbf{w}idth})
+ %   \item na rozmiar strony: \key{p} (od angielskiego \textit{Fit \textbf{p}age})
+    \item na rozmiar strony: \key{p} (od angielskiego \textit{Fit \textbf{p}age})
+    \end{itemize}
+  \item Skalowanie bezwzglêdne
+    \begin{itemize}
+%    \item 100~\%: \key{1}
+    \item 100~\%: \key{1}
+%    \item 200~\%: \key{2}
+    \item 150~\%: \key{2}
+%    \item 300~\%: \key{3}
+    \item 300~\%: \key{3}
+% do sprawdzenia w ¼ród³ach!:
+%    \item kolejno 150~\%, 300~\%, 450~\% itp.: \key{+}
+    \item kolejno 150~\%, 300~\%, 450~\% itp.: \key{+}
+% do sprawdzenia w ¼ród³ach!:
+%    \item kolejno 75~\%, 50~\%, 25~\% itp.: \key{-}
+    \item kolejno 75~\%, 50~\%, 25~\% itp.: \key{-}
+    \end{itemize}
+  \item Lupa (ang. \textit{lens}) --- tylko w~trybie pozycjonowania:
+    \key{Ctrl}
+\end{itemize}
+  \item Pozycjonowanie (ang. \textit{panning} i inne)
+    \begin{itemize}
+%     \item Pocz±tek strony (górny lewy róg): \key{Home}
+%     \item Koniec strony (dolny prawy róg): \key{End}
+    \item Przesuniêcie strony w dó³ (kursora w górê): \key{Up}
+    \item Przesuniêcie strony w górê (kursora w dó³): \key{Down}
+    \item Przesuniêcie strony w lewo (kursora w prawo): \key{Right}
+    \item Przesuniêcie strony w prawo (kursora w lewo): \key{Left}
+    \item W trybie pozycjonowania: przesuniêcie strony mysz± w dowolnym kierunku po naci¶niêciu lewego klawisza 
+    \end{itemize}
+  \item Przewijanie (ang. \textit{scrolling})
+    \begin{itemize}
+%
+    \item Przewiniêcie do przodu (tekst w górê, kursor w dó³, w razie potrzeby przej¶cie do nastêpnej strony): \key{PageDown}
+%
+% Enter!
+    \item Przewiniêcie do ty³u (tekst w dó³, kursor w górê, w razie potrzeby przej¶cie do poprzedniej strony): \key{PageUp}
+    \end{itemize}
+  \item Nawigacja
+    \begin{itemize}
+%    \item Nastêpna strona: \key{Page Down}
+    \item Nastêpna strona: \key{Space}
+%    \item Poprzednia strona: \key{Page Up}
+    \item Poprzednia strona: \key{Backspace}
+%    \item Wskazana strona: \key{g}
+    \item Wskazana strona: \key{g}
+%    \item Pocz±tek dokumentu: \key{Ctrl} + \key{Home}
+    \item Pocz±tek dokumentu:  \key{Home}
+%    \item Koniec dokumentu: \key{Ctrl} + \key{End}
+    \item Koniec dokumentu: \key{End}
+    \end{itemize}
+  \item Obs³uga odno¶ników (ang. \textit{links})
+    \begin{itemize}
+    \item U¿ycie odno¶nika: ¶rodkowy klawisz myszy
+%    \item Pokazanie wszystkich odno¶ników na stronie: \key{Shift}
+    \end{itemize}
+  \item Historia
+    \begin{itemize}
+% ``widok'' djvu.com.pl
+    \item Poprzedni widok: \key{b}
+    \item Nastêpny widok: \key{v}
+    \end{itemize}
+                                
+  \end{itemize}
+
+% historia B V i w djview?
+
+  Wiêcej informacji mo¿na znale¼æ we wspomnianej w~\htmlref{Dodatku}{sec:dodatek} instrukcji.
+
+
+\section{Tom I: s³ownik polsko-³aciñsko-grecki\HTMLset{mytitle}{t1}}
+\label{sec:tom-i:-sownik}
+
+
+\subsection{Karta katalogowa\HTMLset{mytitle}{t1kk}}
+\label{sec:karta-katalogowa}
+
+\begin{rawhtml}
+<script language="javascript" type="text/javascript">
+<!--
+function showpg(str){ 
+        var doc;
+        doc = top.document; 
+        doc.open(); 
+        doc.write('<html><body>'); 
+        doc.write('<embed src='+str+' type=image/x.djvu  width=100% height=99%><\/embed>'); 
+        doc.write('<\/body><\/html>'); 
+        doc.close(); 
+}
+//-->
+</script>
+\end{rawhtml}
+
+% Skanowane by³y dwa egzemplarze s³ownika --- jeden Pracowni Historii
+% Jêzyka Polskiego XVII i 1. po³. XVIII w. Instytutu Jêzyka Polskiego
+% PAN i jeden ze zbiorów BUW.  Niektóre fragmenty pochodz± tak¿e z
+% egzemplarza Biblioteki Narodowej.
+Karta katalogowa egzemplarza ze zbiorów BUW znajduje siê
+\htmladdnormallink{tutaj}{Kt1i/Kt1i.djvu?djvuopts\&page=1\&zoom=width}.
+
+\def\jl#1#2#3{\HTMLcode[HREF="javascript:showpg('#2 page=#3 zoom=width')"]{A}{#1}}
+
+\subsection{Tytularia i teksty wprowadzaj±ce\HTMLset{mytitle}{t1tw}}
+\label{sec:tytularia-i-wstp}
+
+\begin{rawhtml}
+<script language="javascript" type="text/javascript">
+<!--
+function showpg(str){ 
+        var doc;
+        doc = top.document; 
+        doc.open(); 
+        doc.write('<html><body>'); 
+        doc.write('<embed src='+str+' type=image/x.djvu  width=100% height=99%><\/embed>'); 
+        doc.write('<\/body><\/html>'); 
+        doc.close(); 
+}
+//-->
+</script>
+\end{rawhtml}
+
+% \def\Ktindexl#1#2#3#4{\jl{#2}{Kt1i/Kt1i.djvu}{#4l.djvu}&\nl{#1}{Kt1i/Kt1i.djvu?djvuopts\&page=#4l.djvu\&zoom=width}}
+% \def\Ktindexr#1#2#3#4{\jl{#2}{Kt1i/Kt1i.djvu}{#4r.djvu}&\nl{#1}{Kt1i/Kt1i.djvu?djvuopts\&page=#4r.djvu\&zoom=width}}
+
+\def\Ktindexl#1#2#3#4{\nl{#2}{Kt1i/Kt1i.djvu?djvuopts\&page=#4l.djvu\&zoom=width} (\jl{JavaScript}{Kt1i/Kt1i.djvu}{#4l.djvu})&#1}
+\def\Ktindexr#1#2#3#4{\nl{#2}{Kt1i/Kt1i.djvu?djvuopts\&page=#4r.djvu\&zoom=width} (\jl{JavaScript}{Kt1i/Kt1i.djvu}{#4r.djvu})&#1}
+
+\Java
+
+%\begin{longtable}[c]{ll}
+\begin{longtable}[l]{rl}
+\textbf{Strona}&\textbf{Opis}\\
+\input Kit1s
+\end{longtable}
+
+
+\subsection{Has³a\HTMLset{mytitle}{t1h}}
+\label{sec:hasa}
+
+\begin{rawhtml}
+<script language="javascript" type="text/javascript">
+<!--
+function showpg(str){ 
+        var doc;
+        doc = top.document; 
+        doc.open(); 
+        doc.write('<html><body>'); 
+        doc.write('<embed src='+str+' type=image/x.djvu  width=100% height=99%><\/embed>'); 
+        doc.write('<\/body><\/html>'); 
+        doc.close(); 
+}
+//-->
+</script>
+\end{rawhtml}
+
+% latex2html nie obs³uguje!:
+% \def\nul{}
+% \def\bp#1{\def\p{#1}\ifx\nul\p\else Na oryginale b³êdna pagina: #1}
+
+%\def\Khindexl#1#2#3#4#5{\jl{#1}{Kt1i/Kt1i.djvu}{#5l.djvu}&\nl{#3}{Kt1i/Kt1i.djvu?djvuopts\&page=#5l.djvu\&zoom=width}&{#2}}
+%\def\Khindexr#1#2#3#4#5{\jl{#1}{Kt1i/Kt1i.djvu}{#5r.djvu}&\nl{#3}{Kt1i/Kt1i.djvu?djvuopts\&page=#5r.djvu\&zoom=width}&{#2}}
+
+\def\Khindexl#1#2#3#4#5{\nl{#1}{Kt1i/Kt1i.djvu?djvuopts\&page=#5l.djvu\&zoom=width} (\jl{JavaScript}{Kt1i/Kt1i.djvu}{#5l.djvu})&#3&#2}
+\def\Khindexr#1#2#3#4#5{\nl{#1}{Kt1i/Kt1i.djvu?djvuopts\&page=#5r.djvu\&zoom=width} (\jl{JavaScript}{Kt1i/Kt1i.djvu}{#5r.djvu})&#3&#2}
+
+
+\Java
+
+%\begin{longtable}[c]{lr}
+\begin{longtable}[l]{rlr}
+%\textbf{Strona}&\textbf{Opis}&\textbf{B³êdne numery stron}\\
+\textbf{Strona}&\textbf{Opis}&\\
+\input Kih1s
+\end{longtable}
+
+
+\section{Tom II: s³ownik ³aciñsko-polski\HTMLset{mytitle}{t2}}
+\label{sec:tom-ii:-sownik}
+
+
+\subsection{Karta katalogowa\HTMLset{mytitle}{t2kk}}
+\label{sec:karta-katalogowa-1}
+
+Karta katalogowa egzemplarza ze zbiorów BUW znajduje siê
+\htmladdnormallink{tutaj}{Kt2i/Kt2i.djvu?djvuopts\&page=1\&zoom=width}.
+
+
+\subsection{Tytularia i teksty wprowadzajace\HTMLset{mytitle}{t2tw}}
+\label{sec:tytul-i-wstp1}
+
+\begin{rawhtml}
+<script language="javascript" type="text/javascript">
+<!--
+function showpg(str){ 
+        var doc;
+        doc = top.document; 
+        doc.open(); 
+        doc.write('<html><body>'); 
+        doc.write('<embed src='+str+' type=image/x.djvu  width=100% height=99%><\/embed>'); 
+        doc.write('<\/body><\/html>'); 
+        doc.close(); 
+}
+//-->
+</script>
+\end{rawhtml}
+
+
+
+%\def\KKtindexl#1#2#3#4{\jl{#2}{Kt2i/Kt2i.djvu}{#4l.djvu}&\nl{#1}{Kt2i/Kt2i.djvu?djvuopts\&page=#4l.djvu\&zoom=width}}
+%\def\KKtindexr#1#2#3#4{\jl{#2}{Kt2i/Kt2i.djvu}{#4r.djvu}&\nl{#1}{Kt2i/Kt2i.djvu?djvuopts\&page=#4r.djvu\&zoom=width}}
+
+\def\KKtindexl#1#2#3#4{\nl{#2}{Kt2i/Kt2i.djvu?djvuopts\&page=#4l.djvu\&zoom=width} (\jl{JavaScript}{Kt2i/Kt2i.djvu}{#4l.djvu})&#1}
+\def\KKtindexr#1#2#3#4{\nl{#2}{Kt2i/Kt2i.djvu?djvuopts\&page=#4r.djvu\&zoom=width} (\jl{JavaScript}{Kt2i/Kt2i.djvu}{#4r.djvu})&#1}
+
+\Java
+
+\begin{longtable}[l]{rl}
+\textbf{Strona}&\textbf{Opis}\\
+\input Kit2s
+\end{longtable}
+
+
+
+
+\subsection{Has³a\HTMLset{mytitle}{t2h}}
+\label{sec:hasa-1}
+
+\begin{rawhtml}
+<script language="javascript" type="text/javascript">
+<!--
+function showpg(str){ 
+        var doc;
+        doc = top.document; 
+        doc.open(); 
+        doc.write('<html><body>'); 
+        doc.write('<embed src='+str+' type=image/x.djvu  width=100% height=99%><\/embed>'); 
+        doc.write('<\/body><\/html>'); 
+        doc.close(); 
+}
+//-->
+</script>
+\end{rawhtml}
+
+%\def\KKhindexl#1#2#3#4{\jl{#1}{Kt2i/Kt2i.djvu}{#4l.djvu}&\nl{#2}{Kt2i/Kt2i.djvu?djvuopts\&page=#4l.djvu\&zoom=width}}
+%\def\KKhindexr#1#2#3#4{\jl{#1}{Kt2i/Kt2i.djvu}{#4r.djvu}&\nl{#2}{Kt2i/Kt2i.djvu?djvuopts\&page=#4r.djvu\&zoom=width}}
+
+\def\KKhindexl#1#2#3#4{\nl{#1}{Kt2i/Kt2i.djvu?djvuopts\&page=#4l.djvu\&zoom=width} (\jl{JavaScript}{Kt2i/Kt2i.djvu}{#4l.djvu})&#2}
+\def\KKhindexr#1#2#3#4{\nl{#1}{Kt2i/Kt2i.djvu?djvuopts\&page=#4r.djvu\&zoom=width} (\jl{JavaScript}{Kt2i/Kt2i.djvu}{#4r.djvu})&#2}
+
+\Java
+
+\begin{longtable}[l]{rl}
+\textbf{Strona}&\textbf{Opis}\\
+\input Kih2s
+\end{longtable}
+
+
+\subsection{Suplement\HTMLset{mytitle}{t2s}}
+\label{sec:suplement}
+
+\begin{rawhtml}
+<script language="javascript" type="text/javascript">
+<!--
+function showpg(str){ 
+        var doc;
+        doc = top.document; 
+        doc.open(); 
+        doc.write('<html><body>'); 
+        doc.write('<embed src='+str+' type=image/x.djvu  width=100% height=99%><\/embed>'); 
+        doc.write('<\/body><\/html>'); 
+        doc.close(); 
+}
+//-->
+</script>
+\end{rawhtml}
+
+
+%\def\KKsindexl#1#2#3#4{\jl{#1}{Kt2i/Kt2i.djvu}{#4l.djvu}&\nl{#2}{Kt2i/Kt2i.djvu?djvuopts\&page=#4l.djvu\&zoom=width}}
+%\def\KKsindexr#1#2#3#4{\jl{#1}{Kt2i/Kt2i.djvu}{#4r.djvu}&\nl{#2}{Kt2i/Kt2i.djvu?djvuopts\&page=#4r.djvu\&zoom=width}}
+
+\def\KKsindexl#1#2#3#4{\nl{#1}{Kt2i/Kt2i.djvu?djvuopts\&page=#4l.djvu\&zoom=width} (\jl{JavaScript}{Kt2i/Kt2i.djvu}{#4l.djvu})&#2}
+\def\KKsindexr#1#2#3#4{\nl{#1}{Kt2i/Kt2i.djvu?djvuopts\&page=#4r.djvu\&zoom=width} (\jl{JavaScript}{Kt2i/Kt2i.djvu}{#4r.djvu})&#2}
+
+\Java
+
+
+\begin{longtable}[l]{rl}
+\textbf{Strona}&\textbf{Opis}\\
+\input Kis2s
+\end{longtable}
+
+
+
+% \section{Informacje o tomie  III\HTMLset{mytitle}{t3}}
+% \label{sec:tom-iii}
+
+% \textsc{Tom III bêdzie dostêpny w nieokre¶lonej przysz³o¶ci}.
+
+
+\section{Jadwiga Puzynina o s³owniku Knapskiego\HTMLset{mytitle}{JPuz}}
+\label{sec:jadwiga-puzynina-o}
+
+Elektroniczna wersja ksi±¿ki
+
+\begin{quote}
+  Puzynina Jadwiga\\
+  \textit{,,Thesaurus'' Grzegorza Knapiusza.}\\
+  \textit{Siedemnastowieczny warsztat pracy nad j\k{e}zykiem polskim.}\\
+  Wroc\l{}aw -- Warszawa -- Kraków : ZN im. Ossoli\'nskich 1961
+\end{quote}
+
+w formacie DjVu dostêpna jest \htmladdnormallink{tutaj}{../Puzynina/mJPi.djvu}.
+
+W wersji elektronicznej zosta³a poprawiona wskazana przez Autorkê
+pomy³ka.
+
+
+\section{Uwagi koñcowe\HTMLset{mytitle}{podz}}
+\label{sec:podzikowania}
+
+Wszystkie operacje edytorskie wydania DjVuLibre zosta³y wykonane za
+pomoc± tzw.  programów swobodnych, dystrybuowanych za zasadach
+\textit{GNU General Public License} --- patrz
+\url{http://www.gnu.org/home.pl.html} --- lub licencji podobnych.
+Wykorzystywano przy tym system operacyjny Debian GNU/{Linux}
+(\url{http://www.debian.org/}).
+
+Reprodukcja cyfrowa BUW zawiera skany podwójnych stron, na potrzeby wydania DjVuLibre zosta³y one
+podzielone za pomoc± programu z pakietu ImageMagic
+(\url{http://www.imagemagick.org/}).
+
+Konwersja skanów s³ownika zosta³a dokonana za pomoc± narzêdzi
+DjVuLibre (\url{http://djvulibre.djvuzone.org/}). 
+
+Problemy techniczne pomog³y rozwi±zaæ osoby wypowiadaj±ce siê m.in. na
+forum \nl{\textit{DjVuLibre
+    Help}}{http://sourceforge.net/forum/forum.php?forum_id=103285}.
+
+Strony HTML zosta³y stworzone za pomoc± edytora GNU Emacs
+(\url{http://www.gnu.org/software/emacs/emacs.html}) oraz programów
+\LaTeX{} (\url{http://www.latex-project.org/}) i LaTeXtoHTML
+(\url{http://www.latex2html.org/}).
+
+% Wydanie DjVuLibre zosta³o przygotowane w~\nl{Katedrze Lingwistyki
+%   Formalnej Uniwersytetu Warszawskiego}{http://www.klf.uw.edu.pl/}
+% przez \nl{Janusza S. Bienia}{http://www.mimuw.edu.pl/~jsbien/}.
+% Integracja dodatkowego indeksu nieparzystych stron pierwszego tomu
+% zosta³a przeprowadzona przez Katarzynê Poleszak.
+
+\HTMLset{mytitle}{dodatek}
+
+\section{Dodatek: Format DjVu}
+\label{sec:dodatek}
+
+Format \nl{DjVu}{http://pl.wikipedia.org/wiki/DjVu} (nazwa pochodzi od
+fracuskiego \textit{deja vu} i jest tak samo wymawiana) to format
+dokumentów i plików graficznych przeznaczony do ich wygodnego
+udostêpniania w~Internecie. Staje siê on coraz bardziej popularny, w
+Polsce stosuje go m.in. \nl{Wielkopolska Biblioteka
+  Cyfrowa}{http://www.wbc.poznan.pl/dlibra/help?id=tech-info}.  Inne
+przyk³ady zastosowañ mo¿na znale¼æ pod adresami
+\url{http://www.djvuzone.org/links/index.html} i
+\url{http://www.djvu.com.pl/zastosowania.php}.
+
+\nl{DjVuLibre}{http://sourceforge.net/projects/djvu/} to projekt
+po¶wiêcony stworzeniu oprogramowania do tworzenia i przegl±dania
+dokumentów w~tym formacie, dostêpnego na zasadach 
+% By³ jaki¶ lepszy odno¶nik!:
+\nl{licencji
+  GNU}{http://www.gnu.org/licenses/licenses.pl.html}, czyli tzw.
+,,oprogramowania swobodnego''. Oprogramowanie swobodne jest nie tylko
+bezp³atne, ale mo¿na je m.in. swobodnie rozpowszechniaæ.
+
+Dokumenty w~formacie DjVu ogl±da siê najczê¶ciej za pomoc±
+przegl±darki internetowej uzupe³nionej o odpowiedni± wtyczkê. Mo¿na
+te¿ stosowaæ specjalne przegl±darki plików w~tym formacie. Zarówno
+wtyczki, jak i specjalne przegl±darki dostêpne s± bezp³atnie.
+
+W systemach Linux odpowiednie programy z regu³y wchodz± w~sk³ad
+oficjalnych dystrybucji i instaluje siê je w~standardowy sposób.
+Korzystanie z typowej dla tego systemu wtyczki, a mianowicie
+omówionego wcze¶niej programu \htmlref{\texttt{djview}}{djview}, ilustruj±
+obrazy ekranów dostêpne pod adresem
+\url{http://djvulibre.djvuzone.org/screenshots.html}.
+
+Dla systemów MS Windows programy do obs³ugi formatu DjVu mo¿na pobraæ
+z Internetu. Licencje niektórych z nich pozwalaj± na ich swobodn±
+redystrybucjê.
+
+% http://www.bg.pwr.wroc.pl/download/DjVuBrowserPlugin45.exe
+
+Dla u¿ytkowników MS Windows 98 lub nowszych przeznaczona jest wtyczka
+\textit{DjVu Browser Plugin for Windows}, dalej oznaczana krótko
+\htmlref{\texttt{DjVuBrowser}}{djvubrowser}, do pobrania m.in.  ze
+strony producenta
+ \begin{quote}
+% \small
+% \footnotesize
+% \scriptsize
+  \url{http://www.lizardtech.com/download/dl_download.php?detail=doc_djvu_plugin&platform=win},
+\end{quote}
+lub dystrybutora
+\begin{quote}
+  \url{http://www.djvu.com.pl/download.php}
+\end{quote}
+
+Na wskazanej wy¿ej stronie polskiego dystrybutora dostêpna jest
+równie¿ dokumentacja w~jêzyku polskim.
+
+% Po zainstalowaniu wtyczki mo¿na sprawdziæ jej dzia³anie m.in. na
+% przyk³adach znajduj±cych siê w katalogu
+% \begin{quote}
+%   \verb|Program Files\LizardTech\|
+% \end{quote}
+                                % dodaæ warunki!
+%\path{Program Files\LizardTech\DjVu Control 4.5\Examples\}.
+    
+Kopia najnowszej wersji
+\nl{wtyczki}{../MSWindows/DjVuBrowserPlugin6_1107.exe} i jej
+\nl{polskiej
+  dokumentacji}{../MSWindows/djvu_plugin_manual_pl/directory.djvu} (w
+formacie DjVu) jest tak¿e dostêpna lokalnie. Poniewa¿ producent nie
+udostêpnia ju¿ wtyczki w~\nl{wersji
+  4.5}{../MSWindows/DjVuBrowserPlugin45.exe}, nadaj±cej siê dla MS
+Windows 95, jest ona równie¿ udostêpniona lokalnie.
+
+Pe³ny wykaz bezp³atnych programów do obs³ugi formatu DjVu znajduje siê
+pod adresem \url{http://djvulibre.djvuzone.org/}.
+
+Istniej± dwie odmiany formatu DejaVu, które nazywamy umownie
+\textit{DjVu Web} i \textit{DjVu}. Pierwszy z nich jest wygodniejszy,
+kiedy chcemy szybko obejrzeæ tylko wybrane strony dokumentu, drugi
+lepiej stosowaæ, kiedy chcemy zapoznaæ siê z ca³ym dokumentem.
+Odno¶niki na stronach WWW mog± wskazywaæ zarówno ca³e dokumenty, jaki
+ich konkretne strony.
+
+W systemie MS Windows standardowe odno¶niki do konkretnych stron nie
+dzia³aj±, gdy zawieraj±ce je strony i wskazane dokumenty pobierane s±
+lokalnie z dysku. Problem ten obchodzi siê stosuj±c tzw. Javascript,
+co ma jednak pewne wady --- np. obs³uga Javascript, choæ dostêpna we
+wszystkich przegl±darkach internetowych, mo¿e byæ wy³±czona ze
+wzglêdów bezpieczeñstwa. w~rezultacie stosujemy niekiedy podwojone
+odno¶niki, odpowiednio je oznaczaj±c.
+% oznaczone odpowiednio ,,Linux'' (standardowy odno¶nik)i
+% ,,MS Windows'' (Javascript).
+
+
+\HTMLset{mytitle}{spis}
+
+\tableofcontents{}
+
+\HTMLset{mytitle}{inf}
+
+\end{document}
+
+
+Jestem pod wrazeniem - naprawde dobrze to wszystko wyglada. Jest czytelne. w~S³owniku, mimo braku hasel, po wejsciu w
+odpowiedni tom,poslugujac sie przewijakiem stron oraz umiejetnoscia przewidywania, odnalazlam bez wiekszego wysilku moje
+rodzinne miasto Szydlowiec, a to oznacza, ze mozna  w miare sprawnie z tej edycji korzystac. Ale oprocz podziwu mam tez
+uwagi.
+
+W Knapskim troche inaczej ulozylabym spis tresci  tej internetowej edycji. Po Instrukcji dla uzytkownika zamiescilabym
+rozdzial "O
+
+tym dokumencie", a potem "Spis tresci". Prosze tez o zmiane  nazwy rozdzialu "Tytularia i wstep" na "Tytulatura i teksty
+wprowadzajace" Takie sformulowanie jest zgodne z nazewnictwem uzywanym w polskiej normie dot. budowy ksiazki.  Ponadto
+operuje Pan  slowem "sekcja" dla oznaczenia odrebnych elementow calosci - wolalabym czesc lub rozdzial, uzywane w
+przypadku edycji pi¶mienniczych. Dodane zdanie proponuje tez nieco przeredagowac:
+
+
+
+Edycja cyfrowa, opublikowana w formie p³yty CD, zosta³a poddana w Katedrze Lingwistyki Formalnej UW dalszemu
+przetworzeniu, w celu przystosowania jej do udostêpnienia w Internecie i nadania  bardziej wygodnej postaci.
+
+
+
+Poza tym informuje, ze po wejciu do niektorych sekcji pojawia sie komunikat, ze nie mozna odszukac tego pliku (np. "O tym
+dokumencie" "Spis tresci". "T.2")
+
+
+
+W S³owniku proponuje podobnie ulozyc spis tresci
+
+Instrukcja dla uzytkownika
+
+O tym dokumencie
+
+Spis tresci
+
+Tekst Slownika (tekst zamiast tresc dla unikniecia powtorzen)
+
+Uwagi koncowe.
+
+Dodatek
+
+
+
+%%% Local Variables: 
+%%% coding: iso-8859-2
+%%% mode: latex
+%%% TeX-master: t
+%%% End: 
