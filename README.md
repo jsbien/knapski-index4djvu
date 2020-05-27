@@ -18,3 +18,5 @@ http://ebuw.uw.edu.pl/Content/283674/=file:///home/jsbien/indeksy4IJP/knapski-in
 lub
 
 http://ebuw.uw.edu.pl/Content/283674/=file:///e:/indeksy4IJP/knapski-index4djvu/eBUW/
+
+Wcześniej repozytorium znajdowalo się pod adresem https://bitbucket.org/jsbien/knapski-index4djvu
